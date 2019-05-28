@@ -13,4 +13,4 @@ before_script:
 
 script:
   - ng lint
-  - ng build --prod --base-href https://t-palmer.github.io/travis-demo/
+  - ng build --prod --base-href https://florian8496.github.io/adopte-un-dev/
