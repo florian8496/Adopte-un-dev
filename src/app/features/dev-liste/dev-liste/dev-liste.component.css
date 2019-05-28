@@ -1,0 +1,12 @@
+.new-developer {
+  font-size: 6em;
+  color:gray;
+  display: block;
+  text-align: center;
+  margin-top:60px;
+}
+
+.new-developer-button:hover {
+  cursor: pointer;
+  color:black;
+}
