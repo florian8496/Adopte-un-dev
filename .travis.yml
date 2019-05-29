@@ -7,10 +7,14 @@ branches:
   only:
     - master # will only build for master branch commits
 
-before_script:
-  - npm install -g --silent firebase-tools # installs firebase to run firebase deploy
+before-install:
+  - export NG_CLI_ANALYTICS=ci
   - npm install -g --silent @angular/cli
   - ng analytics off
+  - ng analytics project off
+
+before_script:
+  - npm install -g --silent firebase-tools # installs firebase to run firebase deploy
 
 script:
   - ng build --prod
