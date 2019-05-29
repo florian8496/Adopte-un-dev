@@ -1,15 +1,17 @@
 language: node_js
+
 node_js:
-  - "9"
-dist: trusty
-sudo: required
+  - node
 
 branches:
   only:
-    - master
+    - master # will only build for master branch commits
 
-install:
-  - npm install
+before_script:
+  - npm install -g --silent firebase-tools # installs firebase to run firebase deploy
+  - npm install -g --silent @angular/cli
 
 script:
-  - npm run Adopte-un-dev -- --watch=false --browsers=ChromeHeadlessNoSandbox
+  - ng build --prod
+
+
