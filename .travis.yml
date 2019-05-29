@@ -11,3 +11,4 @@ branches:
 script:
   - ng lint
   - ng build --prod --base-href https://florian8496.github.io/Adopte-un-dev/
+  - ng serve
