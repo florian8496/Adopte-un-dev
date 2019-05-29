@@ -13,10 +13,6 @@ before-install:
   - ng analytics off
   - ng analytics project off
 
-before_script:
-  - npm install -g --silent firebase-tools # installs firebase to run firebase deploy
-
 script:
-  - ng build --prod
-
+  - ng build --prod --base-href https://florian8496.github.io/adopte-un-dev/
 
