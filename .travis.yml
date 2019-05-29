@@ -8,9 +8,8 @@ branches:
   only:
     - master
 
-before_script:
-  - npm install -g @angular/cli
+install:
+  - npm install
 
 script:
-  - ng lint
-  - ng build --prod --base-href https://florian8496.github.io/Adopte-un-dev/
+  - npm run Adopte-un-dev -- --watch=false --browsers=ChromeHeadlessNoSandbox
